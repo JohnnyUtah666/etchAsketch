@@ -13,6 +13,9 @@ function genDivs(num) {
         for (let j = 1; j <= num; j++) {
             let column = document.createElement("div");
             column.className = "column";
+            column.addEventListener("mouseenter", () => {
+                column.style.backgroundColor = "black";
+            })
             column.style.flexBasis = "100%";
             column.style.borderStyle = "solid";
             column.style.borderWidth = "1px";
@@ -21,12 +24,9 @@ function genDivs(num) {
             
             row.appendChild(column);
         }
-        container.appendChild(row);      
-    }
+        container.appendChild(row);   
 }
 
+}
 
-
-genDivs(30);
-
-
+genDivs(60);
