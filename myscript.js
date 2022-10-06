@@ -29,4 +29,32 @@ function genDivs(num) {
 
 }
 
-genDivs(60);
+const thirty = document.querySelector("#thirty");
+const fifty = document.querySelector("#fifty");
+const seventy = document.querySelector("#seventy");
+
+function clearAll() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    
+}
+
+genDivs(30);
+
+thirty.addEventListener("click", () => {
+    clearAll();
+    genDivs(30);
+});
+
+fifty.addEventListener("click", () => {
+    clearAll();
+    genDivs(50);
+});
+
+seventy.addEventListener("click", () => {
+    clearAll();
+    genDivs(70);
+});
+
+
