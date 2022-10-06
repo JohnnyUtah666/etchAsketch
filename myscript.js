@@ -14,12 +14,12 @@ function genDivs(num) {
             let column = document.createElement("div");
             column.className = "column";
             column.addEventListener("mouseenter", () => {
-                column.style.backgroundColor = "black";
-            })
+                column.style.backgroundColor = "antiquewhite";
+            });
             column.style.flexBasis = "100%";
-            column.style.borderStyle = "solid";
+            column.style.borderStyle = "hidden";
             column.style.borderWidth = "1px";
-            column.style.borderColor = "black";
+            column.style.borderColor = "antiquewhite";
             
             
             row.appendChild(column);
@@ -32,6 +32,7 @@ function genDivs(num) {
 const thirty = document.querySelector("#thirty");
 const fifty = document.querySelector("#fifty");
 const seventy = document.querySelector("#seventy");
+
 
 function clearAll() {
     while (container.firstChild) {
