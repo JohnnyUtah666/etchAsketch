@@ -3,31 +3,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#contents {
-    display: flex;
+    background-color: black;
 }
 
 #logo {
-    padding: 15px;
+    margin: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
+    color: antiquewhite;
+    
 }
 
 .buttons {
     margin: 10px;
-    background-color: white;
+    color: antiquewhite;
+    background-color: black;
     border-style: solid;
-    border-color: black;
+    border-color: antiquewhite;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.buttons:active {
+    transform: translateY(2px);
 }
 
 #container {
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: antiquewhite;
     border-radius: 10px;
     width: 500px;
     height: 500px;
