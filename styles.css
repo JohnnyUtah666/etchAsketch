@@ -5,17 +5,30 @@ body {
     align-items: center;
 }
 
+#contents {
+    display: flex;
+}
+
 #logo {
-    padding: 20px;
+    padding: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
+}
+
+.buttons {
+    margin: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 }
 
 #container {
     border-style: solid;
     border-width: 3px;
     border-color: black;
+    border-radius: 10px;
     width: 500px;
     height: 500px;
     display: flex;
